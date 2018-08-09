@@ -1,0 +1,4 @@
+.DS_Store
+*.pyc
+wpa_supplicant.conf
+google-credentials.json

@@ -1,0 +1,45 @@
+[
+  {
+    "uid": "speech",
+    "append": true,
+    "watch": false,
+    "command": "python",
+    "script": "speech.py",
+    "sourceDir": "/home/pi/bobbycom/speech",
+    "logFile": "/home/pi/.forever/speech.log",
+    "outFile": "/home/pi/.forever/speech-out.log",
+    "errFile": "/home/pi/.forever/speech-err.log"
+  },
+  {
+    "uid": "ui",
+    "append": true,
+    "watch": false,
+    "command": "python",
+    "script": "ui.py",
+    "sourceDir": "/home/pi/bobbycom/ui",
+    "args": ["mqtt"],
+    "logFile": "/home/pi/.forever/ui.log",
+    "outFile": "/home/pi/.forever/ui-out.log",
+    "errFile": "/home/pi/.forever/ui-err.log"
+  },
+  {
+    "uid": "ble-relay",
+    "append": true,
+    "watch": false,
+    "script": "ble-relay.js",
+    "sourceDir": "/home/pi/bobbycom/network",
+    "logFile": "/home/pi/.forever/ble-relay.log",
+    "outFile": "/home/pi/.forever/ble-relay-out.log",
+    "errFile": "/home/pi/.forever/ble-relay-err.log"
+  },
+  {
+    "uid": "internet",
+    "append": true,
+    "watch": false,
+    "script": "internet.js",
+    "sourceDir": "/home/pi/bobbycom/network",
+    "logFile": "/home/pi/.forever/internet.log",
+    "outFile": "/home/pi/.forever/internet-out.log",
+    "errFile": "/home/pi/.forever/internet-err.log"
+  }
+]
